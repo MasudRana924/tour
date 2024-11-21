@@ -1,0 +1,31 @@
+.perfect-home-container{
+    height:900px;
+    background: #FFF;
+}
+.perfect-top-section {
+    margin-top: 74px;
+}
+.perfect-home-title{
+    color: #202224;
+font-size: 36px;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+letter-spacing: 1.08px;
+text-transform: uppercase;
+}
+.perfect-home-smtitle{
+    color: #7E7F90;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 0.48px;
+    text-transform: capitalize;
+}
+.perfect-home-find-btn{
+    width: 157px;
+height: 44.068px;
+border-radius: 8px;
+background: #34B778;
+}

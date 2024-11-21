@@ -1,0 +1,35 @@
+.banner-title{
+    color: #333D43;
+font-family: Poppins;
+font-size: 36px;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+letter-spacing: 2.16px;
+height: 43px;
+}
+.adventure-title{
+    color: #333D43;
+font-family: Poppins;
+font-size: 64px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+letter-spacing: 6.4px;
+}
+.experience-title{
+    color: #FFF;
+text-align: center;
+font-family: Lato;
+font-size: 20px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+}
+.banner-bottom-section{
+    height: 176px;
+    border-radius: 24px;
+border: 3px solid rgba(177, 212, 219, 0.60);
+background: linear-gradient(91deg, rgba(177, 212, 219, 0.60) 0%, rgba(177, 212, 219, 0.10) 100%);
+
+}

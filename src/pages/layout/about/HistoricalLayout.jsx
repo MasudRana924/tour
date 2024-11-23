@@ -1,9 +1,9 @@
-import backImg from '../../../assets/Rectangle 18.png';
+import backImg from '../../../assets/Hero Section-Bg Image-01.png';
+import Navbar from '../../../components/common/Navbar';
+import Footer from '../../../components/common/Footer';
 import imgOne from '../../../assets/Rectangle 38.png';
 import imgTwo from '../../../assets/Rectangle 39.png';
 import imgThree from '../../../assets/Rectangle 38 (5).png';
-import Navbar from '../../../components/common/Navbar';
-import Footer from '../../../components/common/Footer';
 const imageData = [
     { image: imgOne, title: 'Discover the Worlds Longest Natural Sea Beach at Coxs Bazar', smtitle: '24.OCT.2022 | BY ADMIN' },
     { image: imgTwo, title: 'Unveil the Historical Charm of Coxs Bazar', smtitle: '24.OCT.2022 | BY ADMIN' },
@@ -15,28 +15,23 @@ const imageData = [
     { image: imgOne, title: 'Discover the Worlds Longest Natural Sea Beach at Coxs Bazar', smtitle: '24.OCT.2022 | BY ADMIN' },
     { image: imgTwo, title: 'Discover the Worlds Longest Natural Sea Beach at Coxs Bazar', smtitle: '24.OCT.2022 | BY ADMIN' },
 ];
-const HistoricalPlace = () => {
-if(backImg){
-    console.log("hello")
-}
+const HistoricalLayout = () => {
     return (
         <div>
-            {/* <Navbar /> */}
+            <Navbar />
             <div
-                style={{
-                    backgroundImage: `url(${backImg})`,
-                    backgroundSize: 'cover',
-                    backgroundPosition: 'center'
-                }}
+                style={{ backgroundImage: `url(${backImg})`, backgroundSize: 'cover', backgroundPosition: 'center' }}
                 className="w-full h-screen flex flex-col items-center justify-center pt-24 lg:pt-0 pb-24 lg:pb-0"
             >
-                <div className="w-full md:w-2/3 lg:w-3/4 mx-auto text-gray-900">
+                <div>
+                <div className="w-full  mx-auto text-gray-900">
                     <h1 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-semibold text-center mb-8">
                         Historical Place Appeared On Search
                     </h1>
-                    <p className="text-center">
-                        <span className="text-gray-400">Home / Pages /</span> Blog
+                    <p className="text-center text-white">
+                        Home | Pages | Blog
                     </p>
+                </div>
                 </div>
             </div>
             <div className="container mx-auto px-4 py-8">
@@ -56,4 +51,5 @@ if(backImg){
         </div>
     );
 };
-export default HistoricalPlace;
+
+export default HistoricalLayout;

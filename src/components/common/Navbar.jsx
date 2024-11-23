@@ -144,17 +144,17 @@ function Navbar() {
                       flexGrow: 1,
                     }}
                   ></Box>
-                  <Link to="/about">
+                  <Link to="/about-us">
                     <MenuItem onClick={() => scrollToSection("features")}>
                       About Us
                     </MenuItem>
                   </Link>
-                  <Link to="/contact">
+                  <Link to="/contact-us">
                     <MenuItem onClick={() => scrollToSection("testimonials")}>
                       Contact Us
                     </MenuItem>
                   </Link>
-                  <Link to="/historical-places">
+                  <Link to="/historical/place">
                     <MenuItem onClick={() => scrollToSection("highlights")}>
                       Historical Place
                     </MenuItem>

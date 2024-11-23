@@ -7,9 +7,9 @@ const ContactHeroSection = () => {
     return (
                     <div
                 style={{ backgroundImage: `url(${backImg})`, backgroundSize: 'cover', backgroundPosition: 'center' }}
-                className="w-full h-screen flex flex-col items-center justify-center pt-24 lg:pt-0 pb-24 lg:pb-0"
+                className="w-full md:h-screen md:flex md:flex-col md:items-center md:justify-center  lg:pt-0 lg:pb-0 pt-24"
             >
-                <div className="w-full lg:w-3/4 mx-auto flex flex-col lg:flex-row gap-4 h-40 lg:h-64 rounded-lg overflow-hidden" style={{ backgroundColor: 'rgba(0, 152, 131, 0.46)' }}>
+                <div className="w-full lg:w-3/4 mx-auto flex flex-col lg:flex-row gap-4 h-36 md:h-64 rounded-lg overflow-hidden" style={{ backgroundColor: 'rgba(0, 152, 131, 0.46)' }}>
 
                     {/* Left Section: Images */}
                     <div className="w-full lg:w-1/4 mx-auto flex flex-col gap-4 pt-8 h-auto overflow-hidden">

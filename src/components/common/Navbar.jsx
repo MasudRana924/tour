@@ -64,7 +64,7 @@ function Navbar() {
             >
               <Link to="/">
                 <Typography variant="h5" className="text-violet-500 text-xl">
-                  CareerCove
+                  TourGuide
                 </Typography>
               </Link>
               <Box sx={{ display: { xs: "none", md: "flex" } }}>

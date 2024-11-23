@@ -57,6 +57,7 @@ const PopularDestinations = () => {
               <IoLocationOutline /> 20 packages
             </p>
           </div>
+          
         </div>
       </div>
     </div>

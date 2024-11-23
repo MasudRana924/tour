@@ -12,7 +12,6 @@ const AppRoutes = () => {
            <Route path="/user/login" element={<Login />} />
            <Route path="/about-us" element={<AboutusLayout />} />
            <Route path="/contact-us" element={<ContactUs />} />
-           {/* <Route path="/hitorical-place" element={<HistoricalPlace />} /> */}
            <Route path="/historical/place" element={<HistoricalLayout />} />
            <Route path="/destination/:id" element={<DestinationDetails />} />
         </Routes>

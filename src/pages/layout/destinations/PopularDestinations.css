@@ -1,51 +1,54 @@
-.popular-destinations{
+.popular-destinations {
   background-color: rgba(52, 183, 120, 0.13);
   height: 800px;
 }
-.title{
-color: #252525;
-text-align: center;
-font-family: Poppins;
-font-size: 36px;
-font-style: normal;
-font-weight: 600;
-line-height: normal;
-text-transform: uppercase;
-padding-top: 34px;
+
+.title {
+  color: #252525;
+  text-align: center;
+  font-family: Poppins;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  text-transform: uppercase;
+  padding-top: 34px;
 }
-.small-title{
-color: #333D43;
-font-family: Lato;
-font-size: 16px;
-font-style: normal;
-font-weight: 500;
-line-height: normal;
-height:19px
+
+.small-title {
+  color: #333D43;
+  font-family: Lato;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  height: 19px;
 }
-.button-all{
-height: 48px;
-padding: 16px 32px;
-border-radius: 8px;
-background: #34B778;
+
+.button-all {
+  height: 48px;
+  padding: 16px 32px;
+  border-radius: 8px;
+  background: #34B778;
 }
-.destinations-button{
-height: 48px;
-padding: 16px 32px;
-border-radius: 8px;
-background: rgba(126, 127, 144, 0.20);
-color:#7E7F90;
-font:20px;
-font-family: Lato;
-font-size: 16px;
-font-style: normal;
-font-weight: 500;
-line-height: normal;
+
+.destinations-button {
+  height: 48px;
+  padding: 16px 32px;
+  border-radius: 8px;
+  background: rgba(126, 127, 144, 0.20);
+  color: #7E7F90;
+  font-family: Lato;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
 }
-.slider-book-btn{
-  /* background: #34B778;
-   */
-   background-color: #34B778;
+
+.slider-book-btn {
+  background-color: #34B778;
 }
+
 .carousel-container {
   width: 100%;
   overflow: hidden;
@@ -56,40 +59,41 @@ line-height: normal;
 
 .carousel {
   display: flex;
-  gap: 10px; /* Adds 5px gap between items */
+  gap: 10px;
   animation: scroll 30s linear infinite;
 }
 
 .carousel-item {
   flex-shrink: 0;
-  width: 25%;
-  position: relative; /* Enable positioning for overlay content */
+  width: 20%; /* Default width for all items */
+  position: relative;
 }
 
-.carousel-item:nth-child(2) {
-  width: 50%;
-  height:500px
+.carousel-item:nth-child(2),
+.carousel-item:nth-child(4) {
+  width: 50%; /* Make 2nd and 4th items larger */
+  height: 500px;
 }
 
 .carousel-item img {
   width: 100%;
   height: auto;
   display: block;
-  object-fit: cover; /* Ensures images are properly scaled */
+  object-fit: cover;
   border-radius: 10px; /* Adds a rounded look to the images */
 }
 
-/* Add overlay only for the second carousel item */
-.carousel-item:nth-child(2) .overlay-content {
+.carousel-item:nth-child(2) .overlay-content,
+.carousel-item:nth-child(4) .overlay-content {
   position: absolute;
-  inset: 0; /* Covers the entire image area */
-  background: rgba(0, 0, 0, 0.5); /* Semi-transparent black background */
+  inset: 0;
+  background: rgba(0, 0, 0, 0.5);
   display: flex;
   flex-direction: column;
-  justify-content: flex-end; /* Push content to the bottom */
+  justify-content: flex-end;
   padding: 1rem;
-  color: white; /* Ensure text is visible on dark background */
-  border-radius: 10px; /* Matches the image rounding */
+  color: white;
+  border-radius: 10px;
 }
 
 /* Keyframes for scrolling animation */
@@ -108,16 +112,18 @@ line-height: normal;
     width: 30%;
   }
 
-  .carousel-item:nth-child(2) {
-    width: 40%;
+  .carousel-item:nth-child(2),
+  .carousel-item:nth-child(4) {
+    width: 40%; /* Adjust width for 2nd and 4th items on medium screens */
   }
 
   .carousel-item img {
-    border-radius: 8px; /* Adjust rounded corners for smaller screens */
+    border-radius: 8px;
   }
 
-  .carousel-item:nth-child(2) .overlay-content {
-    padding: 0.75rem; /* Reduce padding for smaller screens */
+  .carousel-item:nth-child(2) .overlay-content,
+  .carousel-item:nth-child(4) .overlay-content {
+    padding: 0.75rem;
   }
 }
 
@@ -126,13 +132,15 @@ line-height: normal;
     width: 40%;
   }
 
-  .carousel-item:nth-child(2) {
+  .carousel-item:nth-child(2),
+  .carousel-item:nth-child(4) {
     width: 50%;
   }
 
-  .carousel-item:nth-child(2) .overlay-content {
-    font-size: 0.9rem; /* Adjust text size for better readability */
-    padding: 0.5rem; /* Reduce padding further */
+  .carousel-item:nth-child(2) .overlay-content,
+  .carousel-item:nth-child(4) .overlay-content {
+    font-size: 0.9rem;
+    padding: 0.5rem;
   }
 }
 
@@ -141,18 +149,21 @@ line-height: normal;
     width: 50%;
   }
 
-  .carousel-item:nth-child(2) {
+  .carousel-item:nth-child(2),
+  .carousel-item:nth-child(4) {
     width: 60%;
-    height:300px;
+    height: 300px;
   }
 
-  .carousel-item:nth-child(2) .overlay-content {
-    font-size: 0.8rem; /* Smaller text for smaller screens */
-    padding: 0.25rem; /* Minimal padding */
+  .carousel-item:nth-child(2) .overlay-content,
+  .carousel-item:nth-child(4) .overlay-content {
+    font-size: 0.8rem;
+    padding: 0.25rem;
   }
 }
+
 @media (max-width: 768px) {
   .destinations-button {
-    width: 48%; /* Adjusts to take up two buttons per row on smaller screens */
+    width: 48%;
   }
 }

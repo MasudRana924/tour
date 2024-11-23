@@ -9,6 +9,9 @@ import VideoPlayer from './videoplayer/VideoPlayer';
 import PopularDestinations from './destinations/PopularDestinations';
 import BannerLayout from './banner/BannerLayout';
 import PerfectHomeLayout from './perfecthome/PerfectHomeLayout';
+import UnlockLayout from './unlock/UnlockLayout';
+import CreatePerfectLayout from './create/CreatePerfectLayout';
+import AdventureLayout from './adventure/AdventureLayout';
 // import CategoryLayout from './CategoryLayout';
 
 
@@ -56,11 +59,14 @@ const HomeLayout = () => {
                     {/* <CategoryLayout/>
                     <TuitionList />
                     <Stats/> */}
-                    <BannerLayout/>
-                    <Suggested/>
+                    <BannerLayout/> 
+                     <Suggested/>
                     <VideoPlayer/>
                     <PopularDestinations/>
-                    <PerfectHomeLayout/>
+                    <PerfectHomeLayout/> 
+                    <UnlockLayout/>
+                    <CreatePerfectLayout/>
+                    <AdventureLayout/>
                     
                 </Box>
                 {/* <Suggested/> */}

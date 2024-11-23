@@ -245,95 +245,97 @@
 //     );
 // };
 // export default Footer;
-import './Footer.css'
+import './Footer.css';
+import { FaInstagram, FaDribbble, FaTwitter, FaYoutube } from 'react-icons/fa';
+import { CiLocationArrow1 } from "react-icons/ci";
+
 const Footer = () => {
   return (
     <footer className="footer-section">
       <div className="container px-6 py-12 mx-auto">
-        <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 sm:gap-y-10 lg:grid-cols-4">
-          {/* Newsletter Section */}
+        <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-5">
+          {/* Copyright Section */}
           <div className="sm:col-span-2">
-            <p className="max-w-lg text-sm text-white">
-            Copyright © 2020 Landify UI Kit.
-            </p>
-            <p className="max-w-lg text-sm text-white">
-            All rights reserved
-            </p>
-           
-          </div>
-
-          {/* Quick Links */}
-          <div>
-            <p className="font-semibold text-gray-800 dark:text-white">Company</p>
-            <div className="flex flex-col items-start mt-5 space-y-2">
-              <a
-                href="#"
-                className="text-gray-600 transition-colors duration-300 dark:text-gray-300 dark:hover:text-blue-400 hover:underline hover:text-blue-500"
-              >
-                About Us
+            <p className="text-sm text-white">Copyright © 2020 Nexcent Ltd.</p>
+            <p className="text-sm text-white">All rights reserved</p>
+            <div className="flex items-center mt-4 space-x-4">
+              <a href="#" className="text-white hover:text-gray-400">
+                <FaInstagram size={24} />
               </a>
-              <a
-                href="#"
-                className="text-gray-600 transition-colors duration-300 dark:text-gray-300 dark:hover:text-blue-400 hover:underline hover:text-blue-500"
-              >
-                Contact Us
+              <a href="#" className="text-white hover:text-gray-400">
+                <FaDribbble size={24} />
               </a>
-              <a
-                href="#"
-                className="text-gray-600 transition-colors duration-300 dark:text-gray-300 dark:hover:text-blue-400 hover:underline hover:text-blue-500"
-              >
-               Blogs
+              <a href="#" className="text-white hover:text-gray-400">
+                <FaTwitter size={24} />
               </a>
-              <a
-                href="#"
-                className="text-gray-600 transition-colors duration-300 dark:text-gray-300 dark:hover:text-blue-400 hover:underline hover:text-blue-500"
-              >
-               Bookings
-              </a>
-              <a
-                href="#"
-                className="text-gray-600 transition-colors duration-300 dark:text-gray-300 dark:hover:text-blue-400 hover:underline hover:text-blue-500"
-              >
-              Testimonials
+              <a href="#" className="text-white hover:text-gray-400">
+                <FaYoutube size={24} />
               </a>
             </div>
           </div>
 
-          {/* Industries */}
+          {/* Company Links */}
           <div>
-            <p className="font-semibold text-gray-800 dark:text-white">Support</p>
-            <div className="flex flex-col items-start mt-5 space-y-2">
-              <a
-                href="#"
-                className="text-gray-600 transition-colors duration-300 dark:text-gray-300 dark:hover:text-blue-400 hover:underline hover:text-blue-500"
-              >
-               Help center
+            <p className="font-semibold text-gray-300">Company</p>
+            <div className="flex flex-col mt-5 space-y-2">
+              <a href="#" className="text-gray-400 hover:text-blue-500 hover:underline">
+                About us
               </a>
-              <a
-                href="#"
-                className="text-gray-600 transition-colors duration-300 dark:text-gray-300 dark:hover:text-blue-400 hover:underline hover:text-blue-500"
-              >
+              <a href="#" className="text-gray-400 hover:text-blue-500 hover:underline">
+                Blog
+              </a>
+              <a href="#" className="text-gray-400 hover:text-blue-500 hover:underline">
+                Contact us
+              </a>
+              <a href="#" className="text-gray-400 hover:text-blue-500 hover:underline">
+                Bookings
+              </a>
+              <a href="#" className="text-gray-400 hover:text-blue-500 hover:underline">
+                Testimonials
+              </a>
+            </div>
+          </div>
+
+          {/* Support Links */}
+          <div>
+            <p className="font-semibold text-gray-300">Support</p>
+            <div className="flex flex-col mt-5 space-y-2">
+              <a href="#" className="text-gray-400 hover:text-blue-500 hover:underline">
+                Help center
+              </a>
+              <a href="#" className="text-gray-400 hover:text-blue-500 hover:underline">
                 Terms of service
               </a>
-              <a
-                href="#"
-                className="text-gray-600 transition-colors duration-300 dark:text-gray-300 dark:hover:text-blue-400 hover:underline hover:text-blue-500"
-              >
+              <a href="#" className="text-gray-400 hover:text-blue-500 hover:underline">
                 Legal
               </a>
-              <a
-                href="#"
-                className="text-gray-600 transition-colors duration-300 dark:text-gray-300 dark:hover:text-blue-400 hover:underline hover:text-blue-500"
-              >
-               Privacy policy
+              <a href="#" className="text-gray-400 hover:text-blue-500 hover:underline">
+                Privacy policy
               </a>
-              <a
-                href="#"
-                className="text-gray-600 transition-colors duration-300 dark:text-gray-300 dark:hover:text-blue-400 hover:underline hover:text-blue-500"
-              >
+              <a href="#" className="text-gray-400 hover:text-blue-500 hover:underline">
                 Status
               </a>
             </div>
+          </div>
+
+          {/* Newsletter Section */}
+          <div>
+            <p className="font-semibold text-gray-300">Stay up to date</p>
+            <div className="mt-5">
+  <form className="relative">
+    <input
+      type="email"
+      placeholder="Your email address"
+      className="w-full px-4 py-2 pr-12 text-gray-800 rounded-lg focus:outline-none"
+    />
+    <button
+      type="submit"
+      className="absolute inset-y-0 right-0 px-4"
+    >
+     <CiLocationArrow1/>
+    </button>
+  </form>
+</div>
           </div>
         </div>
       </div>

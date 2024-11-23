@@ -1,0 +1,13 @@
+.unlock-container{
+    height:800px;
+    background: rgba(52, 183, 120, 0.15)
+}
+.unlock-btn{
+    height: 44.068px;
+border-radius: 8px;
+background: #34B778;
+}
+.create-tour-btn{
+    border: 1px solid #FFF;
+background: linear-gradient(90deg, rgba(255, 255, 255, 0.30) 0%, rgba(255, 255, 255, 0.10) 100%);
+}

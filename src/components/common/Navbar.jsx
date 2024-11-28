@@ -89,6 +89,13 @@ function Navbar() {
                     </Typography>
                   </MenuItem>
                 </Link>
+                <Link to="/tour/guide">
+                  <MenuItem sx={{ py: "6px", px: "12px" }}>
+                    <Typography variant="body2" color="text.primary">
+                      Tour Guide
+                    </Typography>
+                  </MenuItem>
+                </Link>
               </Box>
             </Box>
             <Box

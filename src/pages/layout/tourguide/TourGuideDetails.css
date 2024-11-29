@@ -58,6 +58,21 @@
     flex-direction: column;
     gap: 1rem;
 }
+/* Responsive adjustment for DatePicker */
+.ant-picker {
+    width: 100% !important; /* Ensure full width on smaller screens */
+}
+
+/* For small devices, reduce padding or adjust layout */
+@media (max-width: 768px) {
+    .ant-picker-input > input {
+        font-size: 0.875rem; /* Adjust font size */
+    }
+
+    .ant-picker {
+        padding: 0.5rem; /* Adjust padding */
+    }
+}
 
 /* Responsive adjustments for smaller devices */
 @media (max-width: 1023px) {

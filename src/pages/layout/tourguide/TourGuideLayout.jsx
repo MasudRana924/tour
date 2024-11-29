@@ -3,6 +3,7 @@ import Navbar from "../../../components/common/Navbar";
 import { FaMapMarkerAlt } from "react-icons/fa";
 import backImg from '../../../assets/tour.jpg';
 import { useNavigate } from 'react-router-dom';
+import { MdOutlinePhone } from "react-icons/md";
 import TabSection from "./Tab";
 
 const tourGuideData = [
@@ -13,6 +14,7 @@ const tourGuideData = [
         location: 'Sylhet',
         price: '$50/day',
         description: 'Explore the lush green tea gardens and serene waterfalls of Sylhet. You will be mesmerized by the beauty of nature.',
+        phone: '0123456456789'
     },
     {
         id: 2,
@@ -21,6 +23,7 @@ const tourGuideData = [
         location: 'Cox Bazar',
         price: '$70/day',
         description: 'Enjoy the world’s longest sea beach and mesmerizing sunsets. A perfect destination for beach lovers.',
+        phone: '0123456456789'
     },
     {
         id: 3,
@@ -29,6 +32,7 @@ const tourGuideData = [
         location: 'Bandarban',
         price: '$60/day',
         description: 'Experience the rugged beauty of the hills and tribal culture. Perfect for adventure enthusiasts.',
+        phone: '0123456456789'
     },
     {
         id: 4,
@@ -37,6 +41,7 @@ const tourGuideData = [
         location: 'Sajek',
         price: '$80/day',
         description: 'Discover the cloud-kissed valleys and breathtaking views of Sajek. A heavenly retreat.',
+        phone: '0123456456789'
     },
     {
         id: 5,
@@ -45,6 +50,7 @@ const tourGuideData = [
         location: 'Sonargaon',
         price: '$40/day',
         description: 'Dive into the history and culture of ancient Bengal. A journey through time.',
+        phone: '0123456456789'
     },
     {
         id: 6,
@@ -53,6 +59,7 @@ const tourGuideData = [
         location: 'Sundarbans',
         price: '$90/day',
         description: 'Explore the mysterious mangrove forest and spot the Royal Bengal Tiger. A thrilling adventure awaits.',
+        phone: '0123456456789'
     },
 ];
 
@@ -68,7 +75,7 @@ const TourGuideLayout = () => {
                 <div>
                     <div className="w-full lg:w-8/12 mx-auto bg-white h-64 border rounded-lg">
 
-                        <TabSection/>
+                        <TabSection />
                     </div>
                 </div>
             </div>
@@ -86,9 +93,14 @@ const TourGuideLayout = () => {
                         >
                             <img src={tour.image} alt={tour.name} className="w-full h-44 mb-2 border rounded-lg " />
                             <h3 className="text-lg font-medium  text-center text-blue-700">{tour.name}</h3>
-                            <p className="text-start text-sm text-gray-400 flex items-center mt-2 ">
+                           <div className="md:flex justify-between">
+                           <p className="text-start text-sm text-gray-400 flex items-center mt-2 ">
+                                <MdOutlinePhone className="mr-2 text-red-500" /> {tour.phone}
+                            </p>
+                           <p className="text-start text-sm text-gray-400 flex items-center mt-2 ">
                                 <FaMapMarkerAlt className="mr-2 text-red-500" /> {tour.location}
                             </p>
+                           </div>
                             <p className="text-start text-sm text-gray-900 mt-2">{tour.price}</p>
                             <p className="text-start text-sm text-gray-600 mt-2">
                                 {tour.description.length > 50
